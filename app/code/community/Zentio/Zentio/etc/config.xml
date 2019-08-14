@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Module config
+ * @author ZentIO
+ */
+-->
+<config>
+    <modules>
+        <Zentio_Zentio>
+            <version>1.0</version>
+        </Zentio_Zentio>
+    </modules>
+
+    <global>
+        <helpers>
+            <zentio>
+                <class>Zentio_Zentio_Helper</class>
+            </zentio>
+        </helpers>
+        <models>
+            <zentio>
+                <class>Zentio_Zentio_Model</class>
+            </zentio>
+        </models>
+        <blocks>
+            <zentio>
+                <class>Zentio_Zentio_Block</class>
+            </zentio>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <zentio>
+                <use>standard</use>
+                <args>
+                    <module>Zentio_Zentio</module>
+                    <frontName>zentio</frontName>
+                </args>
+            </zentio>
+        </routers>
+    </frontend>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Zentio_Zentio after="Mage_Adminhtml">Zentio_Zentio_Adminhtml</Zentio_Zentio>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

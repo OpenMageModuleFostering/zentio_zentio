@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author ZentIO
+ */
+-->
+<config>
+    <modules>
+        <Zentio_Zentio>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Zentio_Zentio>
+    </modules>
+</config>

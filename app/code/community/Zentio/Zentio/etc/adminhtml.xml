@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <layout>
+        <updates>
+            <zentio_admin_layout>
+                <file>zentio.xml</file>
+            </zentio_admin_layout>
+        </updates>
+    </layout>
+    <menu>
+        <zentio translate="title" module="zentio">
+            <title>ZentIO</title>
+            <sort_order>99999</sort_order>
+            <children>
+                <zentio_settings module="zentio">
+                    <title>Settings</title>
+                    <action>adminhtml/system_config/edit/section/zentio</action>
+                    <sort_order>10</sort_order>
+                </zentio_settings>
+            </children>
+        </zentio>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <zentio translate="title" module="zentio">
+                        <title>ZentIO</title>
+                        <children>
+                            <zentio_settings translate="title" module="zentio">
+                                <title>Settings</title>
+                                <sort_order>10</sort_order>
+                            </zentio_settings>
+                        </children>
+                    </zentio>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <zentio>
+                                        <title>ZentIO Settings section</title>
+                                    </zentio>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

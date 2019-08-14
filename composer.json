@@ -1,7 +1,7 @@
 {
     "name": "OpenMageModuleFostering/Zentio_Zentio",
     "type": "magento-module",
-    "license": "ASL",
+    "license": "Apache-Software-License-(ASL)",
     "homepage": "",
     "description": "Zent.io Multi-Channel Contact Center and Customer Support integrated into your store.",
     "authors": [
