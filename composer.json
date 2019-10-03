@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Zentio_Zentio",
+    "name": "OpenMageModuleFostering\/Zentio_Zentio",
     "type": "magento-module",
     "license": "Apache-Software-License-(ASL)",
     "homepage": "",
     "description": "Zent.io Multi-Channel Contact Center and Customer Support integrated into your store.",
     "authors": [
-    {
-        "name": "Antonio Jos\u00e9 Moreno de la Rosa",
-        "email": "support@zent.io"
-    }
-],
+        {
+            "name": "Antonio Jos\u00e9 Moreno de la Rosa",
+            "email": "support@zent.io"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
